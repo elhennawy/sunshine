@@ -24,6 +24,11 @@
     <!--or something similar.-->
     <string name="app_name">Sunshine</string>
 
+    <!--Used in overflow menu to refresh weather data-->
+    <string name="action_refresh">Refresh</string>
+
+    <!--TODO (1) Add a string resource for your error message-->
+
 
     <!-- - - - - - - - - - - - - -->
     <!--Used by SunshineDateUtils-->
@@ -125,7 +130,7 @@
 
     <string name="condition_unknown">Unknown (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
 
-    <string name="action_refresh">Refresh!</string>
+
     <!-- - - - - - - - - - - -->
     <!-- Used by NetworkUtils-->
     <!-- - - - - - - - - - - -->
