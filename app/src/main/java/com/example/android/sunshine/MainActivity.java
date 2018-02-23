@@ -18,6 +18,8 @@ package com.example.android.sunshine;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.android.sunshine.utilities.NetworkUtils;
@@ -79,4 +81,24 @@ public class MainActivity extends AppCompatActivity {
 
     // COMPLETE (6) the doInBackground method to perform your network requests
     // COMPLETE (7) the onPostExecute method to display the results of the network request
+
+    //Create menu
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.weather_meanu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int getItem=item.getItemId();
+        if(getItem==R.menu.weather_meanu){
+            loadWeatherData("nyc");
+        }
+
+        return true;
+    }
 }
